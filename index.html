@@ -131,6 +131,24 @@ footer .social a{color:var(--gold-soft);margin:0 10px;font-family:'Poppins',sans
 footer .social a:hover{color:var(--gold);}
 footer .fine{margin-top:14px;color:#6d6a7a;}
 
+/* ---------- DISTRIBUTION ---------- */
+.dist-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:44px;}
+.step-card{background:var(--card);border-radius:14px;padding:26px 24px;}
+.step-num{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--violet));color:#fff;font-family:'Poppins',sans-serif;font-weight:800;font-size:15px;text-align:center;line-height:34px;margin-bottom:14px;}
+.step-card h3{font-size:16.5px;color:#fff;margin-bottom:8px;}
+.step-card p{color:var(--gray);font-size:14px;line-height:1.65;}
+.dist-sub{font-size:22px;font-weight:700;color:#fff;margin:8px 0 20px;}
+.benefit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:40px;}
+.benefit-card{background:var(--card);border-left:3px solid var(--gold);border-radius:10px;padding:20px 22px;}
+.benefit-card h4{font-size:15.5px;color:#fff;margin-bottom:6px;}
+.benefit-card p{color:var(--gray);font-size:13.5px;line-height:1.6;}
+
+/* ---------- UNDER CONSTRUCTION ---------- */
+.uc-box{border:2px dashed rgba(212,175,106,0.5);border-radius:14px;padding:56px 24px;text-align:center;background:rgba(212,175,106,0.04);}
+.uc-box .uc-icon{font-size:34px;margin-bottom:14px;}
+.uc-box h3{color:#fff;font-size:20px;margin-bottom:8px;}
+.uc-box p{color:var(--gray);font-size:15px;max-width:540px;margin:0 auto;line-height:1.65;}
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width:900px){
   .values{grid-template-columns:repeat(2,1fr);}
@@ -143,7 +161,7 @@ footer .fine{margin-top:14px;color:#6d6a7a;}
   .nav-links{position:fixed;inset:57px 0 auto 0;background:var(--onyx);flex-direction:column;padding:22px;display:none;border-bottom:1px solid rgba(255,255,255,0.1);}
   .nav-links.open{display:flex;}
   .menu-btn{display:block;}
-  .values,.artist-grid,.service-grid,.release-grid{grid-template-columns:1fr;}
+  .values,.artist-grid,.service-grid,.release-grid,.dist-steps,.benefit-grid{grid-template-columns:1fr;}
   .hero h1{font-size:31px;}
   .btn-ghost{margin-left:0;margin-top:12px;}
   .section{padding:64px 0;}
@@ -172,6 +190,7 @@ footer .fine{margin-top:14px;color:#6d6a7a;}
     <div class="nav-links">
       <a href="#inicio"><span class="es">Inicio</span><span class="en">Home</span></a>
       <a href="#nosotros"><span class="es">Nosotros</span><span class="en">About</span></a>
+      <a href="#distribucion"><span class="es">Distribución</span><span class="en">Distribution</span></a>
       <a href="#artistas"><span class="es">Artistas</span><span class="en">Artists</span></a>
       <a href="#lanzamientos"><span class="es">Lanzamientos</span><span class="en">Releases</span></a>
       <a href="#servicios"><span class="es">Servicios</span><span class="en">Services</span></a>
@@ -191,8 +210,8 @@ footer .fine{margin-top:14px;color:#6d6a7a;}
     </h1>
     <div class="tagline"><span class="es">"Tu voz. Nuestra maestría."</span><span class="en">"Your voice. Our mastery."</span></div>
     <div class="glow-divider"></div>
-    <a class="btn-gold" href="#contacto"><span class="es">Trabaja con nosotros</span><span class="en">Work with us</span></a>
-    <a class="btn-ghost" href="#lanzamientos"><span class="es">Escucha el catálogo</span><span class="en">Hear the catalog</span></a>
+    <a class="btn-gold" href="#contacto"><span class="es">Distribuye tu música</span><span class="en">Distribute your music</span></a>
+    <a class="btn-ghost" href="#distribucion"><span class="es">¿Cómo funciona?</span><span class="en">How it works</span></a>
   </div>
 </header>
 
@@ -229,6 +248,55 @@ footer .fine{margin-top:14px;color:#6d6a7a;}
   </div>
 </section>
 
+<!-- ============ DISTRIBUTION ============ -->
+<section class="section" id="distribucion">
+  <div class="container">
+    <span class="eyebrow"><span class="es">Lo esencial</span><span class="en">The basics</span></span>
+    <h2 class="section-title"><span class="es">¿Qué es la distribución musical?</span><span class="en">What is music distribution?</span></h2>
+    <p class="section-lead">
+      <span class="es block">Es el puente entre tu estudio y el mundo: el proceso de llevar tu música a Spotify, Apple Music, YouTube Music, Amazon, TikTok y todas las plataformas donde está tu audiencia — con tus créditos correctos y tus regalías llegando a ti. Es nuestro fuerte, y así de simple funciona:</span>
+      <span class="en block">It's the bridge between your studio and the world: the process of getting your music onto Spotify, Apple Music, YouTube Music, Amazon, TikTok, and every platform where your audience lives — with your credits done right and your royalties reaching you. It's our specialty, and it works as simply as this:</span>
+    </p>
+    <div class="dist-steps">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3><span class="es">Nos envías tu música</span><span class="en">You send us your music</span></h3>
+        <p><span class="es">Tu master final, el arte de portada y los datos del lanzamiento. Te guiamos con los requisitos — no necesitas ser experto.</span><span class="en">Your final master, cover art, and release info. We guide you through the requirements — no expertise needed.</span></p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3><span class="es">La preparamos y entregamos</span><span class="en">We prepare and deliver it</span></h3>
+        <p><span class="es">Verificamos audio, créditos, metadata y códigos (UPC/ISRC), y entregamos tu lanzamiento a todas las plataformas a tiempo.</span><span class="en">We verify audio, credits, metadata, and codes (UPC/ISRC), then deliver your release to every platform on time.</span></p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3><span class="es">Tu música suena y tú cobras</span><span class="en">Your music plays, you get paid</span></h3>
+        <p><span class="es">Sale al mundo en la fecha planificada y tus regalías se reportan con claridad, sin sorpresas.</span><span class="en">It goes live on the planned date, and your royalties are reported clearly — no surprises.</span></p>
+      </div>
+    </div>
+    <h3 class="dist-sub"><span class="es">¿Por qué hacerlo con una disquera como MasterVox?</span><span class="en">Why do it with a label like MasterVox?</span></h3>
+    <div class="benefit-grid">
+      <div class="benefit-card">
+        <h4><span class="es">Un equipo, no un formulario</span><span class="en">A team, not a form</span></h4>
+        <p><span class="es">Las plataformas self-service te dejan solo con un manual. Aquí, una persona revisa tu lanzamiento y responde tus preguntas.</span><span class="en">Self-service platforms leave you alone with a manual. Here, a real person reviews your release and answers your questions.</span></p>
+      </div>
+      <div class="benefit-card">
+        <h4><span class="es">Créditos y metadata sin errores</span><span class="en">Error-free credits &amp; metadata</span></h4>
+        <p><span class="es">Un error en créditos o códigos puede costarte regalías durante años. Lo verificamos todo antes de publicar.</span><span class="en">One mistake in credits or codes can cost you royalties for years. We verify everything before it goes live.</span></p>
+      </div>
+      <div class="benefit-card">
+        <h4><span class="es">Estrategia de lanzamiento</span><span class="en">Release strategy</span></h4>
+        <p><span class="es">Fecha planificada, pre-save y pitching editorial a playlists — para que tu música no salga al vacío.</span><span class="en">A planned date, pre-save, and editorial playlist pitching — so your music doesn't launch into the void.</span></p>
+      </div>
+      <div class="benefit-card">
+        <h4><span class="es">Regalías claras</span><span class="en">Clear royalties</span></h4>
+        <p><span class="es">Reportes que entiendes y pagos según lo acordado. Tú conservas la titularidad de tus masters.</span><span class="en">Reports you can actually understand and payments as agreed. You keep ownership of your masters.</span></p>
+      </div>
+    </div>
+    <a class="btn-gold" href="#contacto"><span class="es">Distribuye tu música con MasterVox</span><span class="en">Distribute your music with MasterVox</span></a>
+  </div>
+</section>
+
 <!-- ============ ARTISTS ============ -->
 <section class="section" id="artistas">
   <div class="container">
@@ -238,37 +306,10 @@ footer .fine{margin-top:14px;color:#6d6a7a;}
       <span class="es block">Voces que representan lo mejor de nuestra casa. Cada artista del roster recibe acompañamiento directo de A&amp;R, marketing y operaciones.</span>
       <span class="en block">Voices that represent the best of our house. Every artist on the roster gets direct support from A&amp;R, marketing, and operations.</span>
     </p>
-    <div class="artist-grid">
-      <div class="artist-card">
-        <div class="artist-photo"><!-- Reemplaza con <img src="img/jimmy-baruc.jpg" alt="Jimmy Baruc"> -->
-          <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
-        </div>
-        <div class="artist-info">
-          <h3>Jimmy Baruc</h3>
-          <div class="genre"><span class="es">[Género]</span><span class="en">[Genre]</span></div>
-          <p><span class="es">[Bio corta del artista: trayectoria, sonido y último lanzamiento.]</span><span class="en">[Short artist bio: background, sound, and latest release.]</span></p>
-        </div>
-      </div>
-      <div class="artist-card">
-        <div class="artist-photo">
-          <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#D4AF6A" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
-        </div>
-        <div class="artist-info">
-          <h3>[Nombre del artista]</h3>
-          <div class="genre"><span class="es">[Género]</span><span class="en">[Genre]</span></div>
-          <p><span class="es">[Bio corta del artista.]</span><span class="en">[Short artist bio.]</span></p>
-        </div>
-      </div>
-      <div class="artist-card">
-        <div class="artist-photo">
-          <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
-        </div>
-        <div class="artist-info">
-          <h3>[Nombre del artista]</h3>
-          <div class="genre"><span class="es">[Género]</span><span class="en">[Genre]</span></div>
-          <p><span class="es">[Bio corta del artista.]</span><span class="en">[Short artist bio.]</span></p>
-        </div>
-      </div>
+    <div class="uc-box">
+      <div class="uc-icon">🎙️</div>
+      <h3><span class="es">Sección en construcción</span><span class="en">Under construction</span></h3>
+      <p><span class="es block">Estamos preparando los perfiles oficiales de nuestro roster. Muy pronto podrás conocer a nuestros artistas aquí.</span><span class="en block">We're preparing the official profiles of our roster. Very soon you'll be able to meet our artists here.</span></p>
     </div>
   </div>
 </section>
@@ -282,41 +323,10 @@ footer .fine{margin-top:14px;color:#6d6a7a;}
       <span class="es block">Nuestra música vive en Spotify, Apple Music, YouTube Music, Amazon Music, Deezer, TikTok y todo el ecosistema digital.</span>
       <span class="en block">Our music lives on Spotify, Apple Music, YouTube Music, Amazon Music, Deezer, TikTok, and across the entire digital ecosystem.</span>
     </p>
-    <div class="release-grid">
-      <div class="release-card">
-        <div class="release-cover"><!-- Reemplaza con <img src="img/cover1.jpg" alt=""> -->
-          <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#D4AF6A" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg>
-        </div>
-        <div class="release-meta">
-          <h4>[Título del sencillo]</h4>
-          <div class="artist">Jimmy Baruc</div>
-          <div class="links"><a href="#">Spotify</a><a href="#">Apple Music</a><a href="#">YouTube</a></div>
-        </div>
-      </div>
-      <div class="release-card">
-        <div class="release-cover"><svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg></div>
-        <div class="release-meta">
-          <h4>[Título]</h4>
-          <div class="artist">[Artista]</div>
-          <div class="links"><a href="#">Spotify</a><a href="#">Apple Music</a></div>
-        </div>
-      </div>
-      <div class="release-card">
-        <div class="release-cover"><svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#D4AF6A" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg></div>
-        <div class="release-meta">
-          <h4>[Título]</h4>
-          <div class="artist">[Artista]</div>
-          <div class="links"><a href="#">Spotify</a><a href="#">Apple Music</a></div>
-        </div>
-      </div>
-      <div class="release-card">
-        <div class="release-cover"><svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg></div>
-        <div class="release-meta">
-          <h4>[Título]</h4>
-          <div class="artist">[Artista]</div>
-          <div class="links"><a href="#">Spotify</a><a href="#">Apple Music</a></div>
-        </div>
-      </div>
+    <div class="uc-box">
+      <div class="uc-icon">🎧</div>
+      <h3><span class="es">Catálogo en camino</span><span class="en">Catalog on the way</span></h3>
+      <p><span class="es block">Muy pronto podrás escuchar aquí nuestros lanzamientos, con enlaces directos a Spotify, Apple Music y YouTube.</span><span class="en block">Very soon you'll be able to listen to our releases here, with direct links to Spotify, Apple Music, and YouTube.</span></p>
     </div>
   </div>
 </section>
@@ -367,8 +377,8 @@ footer .fine{margin-top:14px;color:#6d6a7a;}
     <div class="contact-wrap">
       <div>
         <p class="section-lead" style="margin-bottom:28px;">
-          <span class="es block">¿Eres artista y quieres trabajar con nosotros? ¿Prensa, sync o negocios? Escríbenos.</span>
-          <span class="en block">Are you an artist looking to work with us? Press, sync, or business inquiries? Write to us.</span>
+          <span class="es block">¿Listo para distribuir tu música con nosotros? También atendemos prensa, sync y negocios. Escríbenos.</span>
+          <span class="en block">Ready to distribute your music with us? We also handle press, sync, and business inquiries. Write to us.</span>
         </p>
         <div class="contact-item">
           <div class="lbl">Email</div>
